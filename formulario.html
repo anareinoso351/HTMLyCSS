@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+       * {box-sizing: border-box;}
+       
+       input[type=text], select, textarea {
+         width: 100%;
+         padding: 12px;
+         border: 1px solid rgb(180, 202, 170);
+         border-radius: 4px;
+         box-sizing: border-box;
+         margin-top: 6px;
+         margin-bottom: 16px;
+         resize: vertical;
+       }
+       
+       input[type=submit] {
+         background-color: #04AA6D;
+         color: white;
+         padding: 12px 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+       }
+       
+       input[type=submit]:hover {
+         background-color: #45a049;
+       }
+       
+       .container {
+         border-radius: 5px;
+         background-color: #f2f2f2;
+         padding: 20px;
+       }
+       </style>
+       </head>
+       <body>
+</head>
+
+<body>
+    
+       
+       <h3>Formulario de Contacto</h3>
+       
+       <div class="container">
+         <form action="/action_page.php">
+           <label for="fname">Nombre</label>
+           <input type="text" id="fname" name="firstname" placeholder="Tú nombre..">
+       
+           <label for="lname">Apellido</label>
+           <input type="text" id="lname" name="lastname" placeholder="Tú apellido..">
+       
+           <label for="country">CATAMARCA</label>
+           <select id="country" name="country">
+             <option value="australia">Capital</option>
+             <option value="canada">Valle Viejo</option>
+             <option value="usa">Interior</option>
+           </select>
+       
+           <label for="subject">Cuentanos..</label>
+           <textarea id="subject" name="subject" placeholder="Escribe lo que quieras.." style="height:200px"></textarea>
+       
+           <input type="submit" value="ENVIAR"><a href="Index.html" class="btn btn-success">Volver a la pagína principal</a>
+         </form>
+         
+       </div>
+
+</body>
+</html>
